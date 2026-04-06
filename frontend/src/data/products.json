@@ -1,0 +1,58 @@
+{
+  "categories": [
+    {
+      "id": "hand-knotted",
+      "name": "Hand Knotted Carpets",
+      "description": "The pinnacle of rug craftsmanship, featuring dense, intricate patterns bound knot by knot.",
+      "image": "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&q=80&w=800",
+      "tag": "Traditional Heritage"
+    },
+    {
+      "id": "hand-tufted",
+      "name": "Hand Tufted Rugs",
+      "description": "Plush, bespoke comfort crafted utilizing a modern tufting gun for versatile design expressions.",
+      "image": "https://images.unsplash.com/photo-1575414003593-eca589c4266b?auto=format&fit=crop&q=80&w=800",
+      "tag": "Modern Luxury"
+    },
+    {
+      "id": "flatweave",
+      "name": "Flatweave & Kilim",
+      "description": "Timeless, low-profile rugs woven without a pile, perfect for modern and rustic interiors alike.",
+      "image": "https://images.unsplash.com/photo-1604085572506-65c2bba00d98?auto=format&fit=crop&q=80&w=800",
+      "tag": "Artisan Craft"
+    },
+    {
+      "id": "custom-bespoke",
+      "name": "Custom & Bespoke",
+      "description": "Tailor-made designs bringing your unique architectural and interior visions to life.",
+      "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800",
+      "tag": "Made to Order"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g1",
+      "title": "Persian Motif Hand-Knotted",
+      "collection": "Classic Heritage",
+      "image": "https://images.unsplash.com/photo-1528699633788-424224dc89b5?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      "id": "g2",
+      "title": "Abstract Oushak Overdyed",
+      "collection": "Contemporary Archive",
+      "image": "https://images.unsplash.com/photo-1581007871115-f14bc016e0a4?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      "id": "g3",
+      "title": "Muted Kazak Runner",
+      "collection": "Nomadic Roots",
+      "image": "https://images.unsplash.com/photo-1588612140409-5f25a9ffc1db?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      "id": "g4",
+      "title": "Modern Minimalist Tufted",
+      "collection": "Nordic Series",
+      "image": "https://images.unsplash.com/photo-1620646233562-f2a31ad24425?auto=format&fit=crop&q=80&w=800"
+    }
+  ]
+}
