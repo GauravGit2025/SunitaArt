@@ -12,12 +12,17 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-16">
-          <div className="w-full lg:w-1/3 space-y-12" data-aos="fade-right">
+        <div className="flex flex-col gap-16 items-center">
+          
+          <div className="w-full max-w-4xl" data-aos="fade-up" data-aos-delay="100">
+            <EnquiryForm />
+          </div>
+
+          <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-luxury-sand" data-aos="fade-up" data-aos-delay="200">
             <div>
               <h4 className="uppercase tracking-widest text-xs text-luxury-olive mb-4">Corporate Office & Manufacturing</h4>
-              <address className="not-italic text-luxury-navy space-y-2 text-lg font-light leading-relaxed">
-                MsAnitaArt<br/>
+              <address className="not-italic text-luxury-navy space-y-2 text-base font-light leading-relaxed">
+                Sunita Rugs<br/>
                 Carpet City, Main Road<br/>
                 Bhadohi, Uttar Pradesh, 221401<br/>
                 India
@@ -26,20 +31,16 @@ export default function Contact() {
             
             <div>
               <h4 className="uppercase tracking-widest text-xs text-luxury-olive mb-4">Direct Contact</h4>
-              <div className="space-y-4 text-luxury-navy text-lg font-light">
+              <div className="space-y-4 text-luxury-navy text-base font-light">
                 <p>Phone: <a href="tel:+919999900000" className="hover:text-luxury-gold transition-colors">+91 99999 00000</a></p>
-                <p>Email: <a href="mailto:export@msanitaart.com" className="hover:text-luxury-gold transition-colors">export@msanitaart.com</a></p>
+                <p>Email: <a href="mailto:export@sunitarugs.com" className="hover:text-luxury-gold transition-colors">export@sunitarugs.com</a></p>
               </div>
             </div>
 
-            <div className="p-8 bg-luxury-ivory border border-luxury-sand">
-              <h4 className="font-heading text-xl text-luxury-navy mb-2">Export Quality Standard</h4>
+            <div className="p-6 bg-luxury-ivory border border-luxury-sand">
+              <h4 className="font-heading text-lg text-luxury-navy mb-2">Export Quality Standard</h4>
               <p className="text-luxury-taupe text-sm">Our manufacturing facilities are compliant with international labor standards, ensuring completely ethical, child-labor-free production lines.</p>
             </div>
-          </div>
-
-          <div className="w-full lg:w-2/3" data-aos="fade-left">
-            <EnquiryForm />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
         <div>
           <h3 className="font-heading text-2xl mb-6 text-luxury-gold flex items-center gap-2">
-            <span className="text-xl">✦</span> MsAnitaArt
+            <span className="text-xl">✦</span> Sunita Rugs
           </h3>
           <p className="text-luxury-bone/80 text-sm leading-relaxed max-w-sm">
             Preserving the cultural significance of handmade carpets from Bhadohi, India. We bring the soul of traditional craftsmanship to contemporary spaces worldwide.
@@ -35,7 +35,7 @@ export default function Footer() {
       </div>
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 pt-8 border-t border-luxury-bone/20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-luxury-bone/60">
-        <p>&copy; {new Date().getFullYear()} MsAnitaArt. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Sunita Rugs. All rights reserved.</p>
         <p>A certified Geographical Indication (GI) protected craft.</p>
       </div>
     </footer>

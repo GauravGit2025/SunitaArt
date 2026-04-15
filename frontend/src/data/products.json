@@ -4,28 +4,28 @@
       "id": "hand-knotted",
       "name": "Hand Knotted Carpets",
       "description": "The pinnacle of rug craftsmanship, featuring dense, intricate patterns bound knot by knot.",
-      "image": "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&q=80&w=800",
+      "image": "/images/categories/hand-knotted.webp",
       "tag": "Traditional Heritage"
     },
     {
       "id": "hand-tufted",
-      "name": "Hand Tufted Rugs",
+      "name": "Hand Woven Rugs",
       "description": "Plush, bespoke comfort crafted utilizing a modern tufting gun for versatile design expressions.",
-      "image": "https://images.unsplash.com/photo-1575414003593-eca589c4266b?auto=format&fit=crop&q=80&w=800",
+      "image": "/images/categories/hand-tufted.webp",
       "tag": "Modern Luxury"
     },
     {
       "id": "flatweave",
       "name": "Flatweave & Kilim",
       "description": "Timeless, low-profile rugs woven without a pile, perfect for modern and rustic interiors alike.",
-      "image": "https://images.unsplash.com/photo-1604085572506-65c2bba00d98?auto=format&fit=crop&q=80&w=800",
+      "image": "/images/categories/flatweave.webp",
       "tag": "Artisan Craft"
     },
     {
       "id": "custom-bespoke",
       "name": "Custom & Bespoke",
       "description": "Tailor-made designs bringing your unique architectural and interior visions to life.",
-      "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800",
+      "image": "/images/categories/custom.webp",
       "tag": "Made to Order"
     }
   ],
@@ -34,25 +34,114 @@
       "id": "g1",
       "title": "Persian Motif Hand-Knotted",
       "collection": "Classic Heritage",
-      "image": "https://images.unsplash.com/photo-1528699633788-424224dc89b5?auto=format&fit=crop&q=80&w=800"
+      "category": "hand-knotted",
+      "image": "/images/carpets/handknotted/handknotted_1.1.webp",
+      "images": [
+        "/images/carpets/handknotted/handknotted_1.1.webp",
+        "/images/carpets/handknotted/handknotted_1.2.webp",
+        "/images/carpets/handknotted/handknotted_1.3.webp",
+        "/images/carpets/handknotted/handknotted_1.4.webp"
+      ],
+      "description": "A stunning masterpiece featuring traditional Persian motifs, meticulously hand-knotted using hand-spun wool and natural dyes. Its intricate details and rich heritage make it a perfect centerpiece for both classic and contemporary spaces.",
+      "features": [
+        "Material: 100% Hand-spun Wool",
+        "Knot Count: 100 knots per square inch",
+        "Dye: Natural vegetable dyes",
+        "Origin: Bhadohi, India"
+      ]
     },
     {
       "id": "g2",
       "title": "Abstract Oushak Overdyed",
       "collection": "Contemporary Archive",
-      "image": "https://images.unsplash.com/photo-1581007871115-f14bc016e0a4?auto=format&fit=crop&q=80&w=800"
+      "category": "hand-knotted",
+      "image": "/images/carpets/handknotted/handknotted_2.1.webp",
+      "images": [
+        "/images/carpets/handknotted/handknotted_2.1.webp",
+        "/images/carpets/handknotted/handknotted_2.2.webp",
+        "/images/carpets/handknotted/handknotted_2.3.webp",
+        "/images/carpets/handknotted/handknotted_2.4.webp"
+      ],
+      "description": "This overdyed Oushak rug blends antique charm with modern aesthetics. It undergoes a specialized distressing and dyeing process to achieve a vibrant yet faded look that seamlessly integrates into bohemian or minimalist decors.",
+      "features": [
+        "Material: Wool pile on cotton foundation",
+        "Process: Hand-knotted and overdyed",
+        "Pile Height: Low, distressed finish",
+        "Origin: Bhadohi, India"
+      ]
     },
     {
       "id": "g3",
       "title": "Muted Kazak Runner",
       "collection": "Nomadic Roots",
-      "image": "https://images.unsplash.com/photo-1588612140409-5f25a9ffc1db?auto=format&fit=crop&q=80&w=800"
+      "category": "flatweave",
+      "image": "/images/carpets/handknotted/Indo-kazak_1.1.webp",
+      "images": [
+        "/images/carpets/handknotted/Indo-kazak_1.1.webp",
+        "/images/carpets/handknotted/Indo-kazak_1.2.webp",
+        "/images/carpets/handknotted/Indo-kazak_1.3.webp"
+      ],
+      "description": "A flatweave runner reflecting the rich heritage of nomadic tribal designs. Characterized by its striking geometric patterns and subdued color palette, it offers excellent durability suitable for high-traffic areas like hallways.",
+      "features": [
+        "Material: 100% Wool",
+        "Style: Reversible Kilim flatweave",
+        "Design: Geometric tribal patterns",
+        "Origin: Bhadohi, India"
+      ]
     },
     {
       "id": "g4",
-      "title": "Modern Minimalist Tufted",
+      "title": "Modern Minimalist Woven",
       "collection": "Nordic Series",
-      "image": "https://images.unsplash.com/photo-1620646233562-f2a31ad24425?auto=format&fit=crop&q=80&w=800"
+      "category": "hand-tufted",
+      "image": "/images/carpets/handwoven/handwoven_1.1.webp",
+      "images": [
+        "/images/carpets/handwoven/handwoven_1.1.webp",
+        "/images/carpets/handwoven/handwoven_1.2.webp",
+        "/images/carpets/handwoven/handwoven_1.3.webp"
+      ],
+      "description": "Embodying the essence of Scandinavian minimalism, this hand-tufted rug features a plush, incredibly soft pile. The subtle textured variations and neutral tones create a grounding element for modern interior sanctuaries.",
+      "features": [
+        "Material: Blended New Zealand Wool & Viscose",
+        "Process: Hand-tufted with canvas backing",
+        "Pile Height: Medium-High for comfort",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g5",
+      "title": "Bespoke Geometric Silk",
+      "collection": "Architectural Series",
+      "category": "custom-bespoke",
+      "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800",
+      "images": [
+        "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1617265113945-814ae3b95a8e?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "description": "An architectural marvel woven in silk and wool. The dynamic geometric patterns catch the light uniquely depending on the viewing angle, offering a bespoke tactile luxury tailored to exact spatial specifications.",
+      "features": [
+        "Material: 60% Bamboo Silk, 40% Premium Wool",
+        "Customization: Scale and palette bespoke to client",
+        "Texture: Carved high-low pile",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g6",
+      "title": "Rustic Kilim Weave",
+      "collection": "Earth Tones",
+      "category": "flatweave",
+      "image": "https://images.unsplash.com/photo-1604085572506-65c2bba00d98?auto=format&fit=crop&q=80&w=800",
+      "images": [
+        "https://images.unsplash.com/photo-1604085572506-65c2bba00d98?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "description": "Woven tightly without a pile, this kilim rug brings an earthy, rustic charm. Using undyed natural wool tones combined with subtle vegetable dye highlights, it's an eco-conscious choice for the contemporary home.",
+      "features": [
+        "Material: 100% Un-dyed natural wool",
+        "Style: Flatweave",
+        "Maintenance: Easy to clean, lightweight",
+        "Origin: Bhadohi, India"
+      ]
     }
   ]
 }

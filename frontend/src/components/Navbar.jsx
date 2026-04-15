@@ -23,13 +23,15 @@ export default function Navbar() {
     { name: 'Home', path: '/' },
     { name: 'Heritage', path: '/about' },
     { name: 'Collections', path: '/products' },
+    { name: 'Custom Order', path: '/custom-order' },
   ]
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-luxury-ivory/95 backdrop-blur-sm shadow-sm py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-heading font-semibold text-luxury-navy flex items-center gap-2">
-          <span className="text-luxury-gold">✦</span> MsAnitaArt
+        <Link to="/" className="text-3xl md:text-4xl font-heading font-bold text-luxury-navy flex items-center gap-4 transition-transform hover:scale-105 drop-shadow-[0_2px_4px_rgba(255,255,255,0.5)]">
+          <img src="/logo.png" alt="Sunita Rugs Logo" className="h-12 md:h-16 w-auto drop-shadow-md" onError={(e) => e.target.style.display='none'} />
+          <span className="tracking-wide text-shadow-sm">Sunita Rugs</span>
         </Link>
 
         {/* Desktop Nav */}

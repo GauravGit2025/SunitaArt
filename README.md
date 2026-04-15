@@ -112,6 +112,33 @@ npm run dev
 ```
 The web application will be accessible at the local URL provided by Vite (usually http://localhost:5173).
 
+## 🚀 Production Deployment
+
+Once everything works in development, follow these steps to deploy for production:
+
+### 1. Backend Deployment
+
+When running in production, use a robust ASGI server like `gunicorn` with Uvicorn workers instead of the standard reload server.
+
+```bash
+cd backend
+pip install gunicorn
+gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8000
+```
+*(Make sure to update the `allow_origins` array in `backend/main.py` to only include your live domain.)*
+
+### 2. Frontend Deployment
+
+To deploy the React application, you need to compile it into static HTML, CSS, and JS.
+
+```bash
+cd frontend
+npm run build
+```
+This generates a `dist/` folder. You can upload the contents of this folder directly to any static web host, such as Netlify, Vercel, Cloudflare Pages, or serve it directly via Nginx/Apache.
+
+*(Ensure your frontend API calls point to your actual live backend domain, typically configured via `.env` variables before building).*
+
 ## 🛠️ Development
 
 - To add a new database model, update `backend/models.py` and `backend/schemas.py`.

@@ -26,7 +26,7 @@ export default function Home() {
           <SectionTitle title="Our Expertise" subtitle="Mastery in weave" alignment="center" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {productsData.categories.map((category, index) => (
-              <ProductCard key={category.id} item={category} delay={index * 100} />
+              <ProductCard key={category.id} item={category} delay={index * 100} linkTo={`/products?category=${category.id}`} />
             ))}
           </div>
           <div className="text-center mt-16">
