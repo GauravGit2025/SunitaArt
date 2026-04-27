@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
+from sqlalchemy import text
 import os
 import smtplib
 from email.mime.text import MIMEText
@@ -22,9 +23,15 @@ app = FastAPI(
 # -------------------------------       
 # ✅ CORS Configuration
 # -------------------------------
+frontend_url = os.getenv("FRONTEND_URL")
+if frontend_url:
+    origins = [url.strip() for url in frontend_url.split(",")]
+else:
+    origins = ["*"]  # Fallback for local development
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ⚠️ Change this in production
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -45,6 +52,18 @@ def startup():
 @app.get("/")
 def health_check():
     return {"message": "Sunita Rugs API is running 🚀"}
+
+# -------------------------------
+# ✅ Ping Route (For Keep-Awake Cron Job)
+# -------------------------------
+@app.get("/ping")
+def ping_db(db: Session = Depends(database.get_db)):
+    try:
+        # Executes a simple query to keep the Supabase database awake
+        db.execute(text("SELECT 1"))
+        return {"status": "ok", "message": "Backend & Database are awake! ⏰"}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
 
 
 # -------------------------------
