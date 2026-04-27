@@ -1,6 +1,6 @@
-# MsAnitaArt - Luxury Handmade Carpet Brand
+# Sunita Rugs - Luxury Handmade Carpet Brand
 
-Welcome to the MsAnitaArt repository! This project is a premium, responsive, editorial-style website for a Bhadohi-based handmade carpet manufacturer. It highlights heritage, craftsmanship, and GI-tagged authenticity while maintaining a minimalist, luxury aesthetic.
+Welcome to the Sunita Rugs repository! This project is a premium, responsive, editorial-style website for a Bhadohi-based handmade carpet manufacturer. It highlights heritage, craftsmanship, and GI-tagged authenticity while maintaining a minimalist, luxury aesthetic.
 
 This monorepo contains both the **Frontend** (React + Vite) and the **Backend** (FastAPI).
 
@@ -33,7 +33,7 @@ This monorepo contains both the **Frontend** (React + Vite) and the **Backend** 
 ## 📂 Project Structure
 
 ```
-MsAnitaArt/
+SunitaRugs/
 ├── backend/                  # Python FastAPI Backend
 │   ├── main.py               # Application entry point
 │   ├── database.py           # Database connection & session configurations
@@ -61,8 +61,8 @@ MsAnitaArt/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/MsAnitaArt.git
-cd MsAnitaArt
+git clone https://github.com/yourusername/SunitaRugs.git
+cd SunitaRugs
 ```
 
 ### 2. Backend Setup

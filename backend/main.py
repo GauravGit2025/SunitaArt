@@ -1,18 +1,25 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
+import os
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from dotenv import load_dotenv
+
+load_dotenv()
 
 import models
 import schemas
 import database
 
 app = FastAPI(
-    title="MsAnitaArt API",
+    title="Sunita Rugs API",
     version="1.0.0",
-    description="Backend API for MsAnitaArt premium website"
+    description="Backend API for Sunita Rugs premium website"
 )
 
-# -------------------------------
+# -------------------------------       
 # ✅ CORS Configuration
 # -------------------------------
 app.add_middleware(
@@ -37,8 +44,53 @@ def startup():
 # -------------------------------
 @app.get("/")
 def health_check():
-    return {"message": "MsAnitaArt API is running 🚀"}
+    return {"message": "Sunita Rugs API is running 🚀"}
 
+
+# -------------------------------
+# ✅ Email Helper Function
+# -------------------------------
+def send_enquiry_email(enquiry: schemas.EnquiryCreate):
+    smtp_server = os.getenv("SMTP_SERVER")
+    smtp_port = os.getenv("SMTP_PORT")
+    sender_email = os.getenv("SENDER_EMAIL")
+    sender_password = os.getenv("SENDER_PASSWORD")
+    receiver_email = os.getenv("RECEIVER_EMAIL")
+
+    if not all([smtp_server, smtp_port, sender_email, sender_password, receiver_email]):
+        print("Email configuration is missing. Skipping email notification.")
+        return
+
+    try:
+        msg = MIMEMultipart()
+        msg['From'] = sender_email
+        msg['To'] = receiver_email
+        msg['Subject'] = f"New Enquiry from {enquiry.fullName} - Sunita Rugs"
+
+        body = f"""
+        <html>
+          <body style="font-family: sans-serif; line-height: 1.6;">
+            <h2 style="color: #2c3e50;">New Enquiry Received</h2>
+            <p><strong>Name:</strong> {enquiry.fullName}</p>
+            <p><strong>Company:</strong> {enquiry.companyName}</p>
+            <p><strong>Email:</strong> {enquiry.email}</p>
+            <p><strong>Phone:</strong> {enquiry.phone}</p>
+            <p><strong>Country:</strong> {enquiry.country}</p>
+            <p><strong>Product Interest:</strong> {enquiry.productInterest}</p>
+            <p><strong>Quantity/Dimensions:</strong> {enquiry.quantity}</p>
+            <p><strong>Message:</strong><br/>{enquiry.message}</p>
+          </body>
+        </html>
+        """
+        msg.attach(MIMEText(body, 'html'))
+
+        server = smtplib.SMTP_SSL(smtp_server, int(smtp_port))
+        server.login(sender_email, sender_password)
+        server.sendmail(sender_email, receiver_email, msg.as_string())
+        server.quit()
+        print("Email notification sent successfully.")
+    except Exception as e:
+        print(f"Failed to send email: {e}")
 
 # -------------------------------
 # ✅ Enquiry API
@@ -46,6 +98,7 @@ def health_check():
 @app.post("/api/enquiries", response_model=schemas.EnquiryResponse)
 def create_enquiry(
     enquiry: schemas.EnquiryCreate,
+    background_tasks: BackgroundTasks,
     db: Session = Depends(database.get_db)
 ):
     try:
@@ -63,6 +116,9 @@ def create_enquiry(
         db.add(db_enquiry)
         db.commit()
         db.refresh(db_enquiry)
+
+        # Queue the email notification to run in the background
+        background_tasks.add_task(send_enquiry_email, enquiry)
 
         return db_enquiry
 

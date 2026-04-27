@@ -28,7 +28,7 @@ export default function Footer() {
           <address className="not-italic text-sm text-luxury-bone/80 space-y-2">
             <p>Carpet City, Bhadohi</p>
             <p>Uttar Pradesh, India 221401</p>
-            <p className="mt-4 pt-2">Email: export@msanitaart.com</p>
+            <p className="mt-4 pt-2">Email: export@sunitarugs.com</p>
             <p>Phone: +91 99999 00000</p>
           </address>
         </div>

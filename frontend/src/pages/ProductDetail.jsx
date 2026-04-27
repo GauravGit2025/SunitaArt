@@ -8,6 +8,25 @@ export default function ProductDetail() {
   const navigate = useNavigate()
   const [product, setProduct] = useState(null)
   const [activeImage, setActiveImage] = useState('')
+  const [zoomStyle, setZoomStyle] = useState({ transformOrigin: '50% 50%', transform: 'scale(1)' })
+
+  const handleMouseMove = (e) => {
+    const { left, top, width, height } = e.currentTarget.getBoundingClientRect()
+    const x = ((e.clientX - left) / width) * 100
+    const y = ((e.clientY - top) / height) * 100
+    
+    setZoomStyle({
+      transformOrigin: `${x}% ${y}%`,
+      transform: 'scale(2.5)'
+    })
+  }
+
+  const handleMouseLeave = () => {
+    setZoomStyle({
+      transformOrigin: '50% 50%',
+      transform: 'scale(1)'
+    })
+  }
 
   useEffect(() => {
     const foundProduct = productsData.gallery.find(item => item.id === id)
@@ -42,12 +61,17 @@ export default function ProductDetail() {
           
           {/* Left Column: Image Gallery */}
           <div className="flex flex-col gap-6" data-aos="fade-right">
-            <div className="relative aspect-[4/5] overflow-hidden bg-luxury-bone w-full">
+            <div 
+              className="relative aspect-[4/5] overflow-hidden bg-luxury-bone w-full cursor-zoom-in rounded-sm"
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+            >
               <img 
                 key={activeImage}
                 src={activeImage} 
                 alt={product.title} 
-                className="w-full h-full object-cover animate-fade-in"
+                className="w-full h-full object-cover transition-transform duration-200 ease-out animate-fade-in"
+                style={zoomStyle}
               />
             </div>
             

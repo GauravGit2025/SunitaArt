@@ -42,7 +42,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div data-aos="fade-right">
             <img 
-              src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?auto=format&fit=crop&q=80&w=1000" 
+              src="/images/hero/bottom.webp" 
               alt="Artisan weaving carpet" 
               className="w-full h-[600px] object-cover"
             />

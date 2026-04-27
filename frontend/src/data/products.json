@@ -8,31 +8,31 @@
       "tag": "Traditional Heritage"
     },
     {
-      "id": "hand-tufted",
+      "id": "hand-woven",
       "name": "Hand Woven Rugs",
       "description": "Plush, bespoke comfort crafted utilizing a modern tufting gun for versatile design expressions.",
-      "image": "/images/categories/hand-tufted.webp",
+      "image": "/images/categories/handwoven.webp",
       "tag": "Modern Luxury"
     },
     {
-      "id": "flatweave",
-      "name": "Flatweave & Kilim",
+      "id": "Dhurrie",
+      "name": "Dhurrie",
       "description": "Timeless, low-profile rugs woven without a pile, perfect for modern and rustic interiors alike.",
-      "image": "/images/categories/flatweave.webp",
+      "image": "/images/categories/Dhurrie.webp",
       "tag": "Artisan Craft"
     },
     {
-      "id": "custom-bespoke",
-      "name": "Custom & Bespoke",
+      "id": "hand-tufted",
+      "name": "Hand Tufted Carpets",
       "description": "Tailor-made designs bringing your unique architectural and interior visions to life.",
-      "image": "/images/categories/custom.webp",
-      "tag": "Made to Order"
+      "image": "/images/categories/hand-tufted.webp",
+      "tag": "exclusive luxury"
     }
   ],
   "gallery": [
     {
       "id": "g1",
-      "title": "Persian Motif Hand-Knotted",
+      "title": "Circular Tibetan Hand-Knotted",
       "collection": "Classic Heritage",
       "category": "hand-knotted",
       "image": "/images/carpets/handknotted/handknotted_1.1.webp",
@@ -42,7 +42,7 @@
         "/images/carpets/handknotted/handknotted_1.3.webp",
         "/images/carpets/handknotted/handknotted_1.4.webp"
       ],
-      "description": "A stunning masterpiece featuring traditional Persian motifs, meticulously hand-knotted using hand-spun wool and natural dyes. Its intricate details and rich heritage make it a perfect centerpiece for both classic and contemporary spaces.",
+      "description": "A stunning masterpiece featuring traditional Tibetan motifs, meticulously hand-knotted using hand-spun wool and natural dyes. Its intricate details and rich heritage make it a perfect centerpiece for both classic and contemporary spaces.",
       "features": [
         "Material: 100% Hand-spun Wool",
         "Knot Count: 100 knots per square inch",
@@ -72,6 +72,123 @@
     },
     {
       "id": "g3",
+      "title": "Vintage Medallion Revival",
+      "collection": "Classic Reimagined",
+      "category": "hand-knotted",
+      "image": "/images/carpets/handknotted/handknotted_3.1.webp",
+      "images": [
+        "/images/carpets/handknotted/handknotted_3.1.webp",
+        "/images/carpets/handknotted/handknotted_3.2.webp",
+        "/images/carpets/handknotted/handknotted_3.3.webp",
+        "/images/carpets/handknotted/handknotted_3.4.webp"
+      ],
+      "description": "This hand-knotted carpet captures the elegance of traditional weaving with a contemporary color palette. Each knot is individually tied by skilled artisans, creating a dense and highly durable surface that enhances both texture and detail.",
+      "features": [
+        "Material: Wool pile on cotton foundation",
+        "Process: Hand-knotted",
+        "Pile Height: Medium, dense texture",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g4",
+      "title": "Muted Heritage Lattice",
+      "collection": "Artisan Legacy",
+      "category": "hand-knotted",
+      "image": "/images/carpets/handknotted/handknotted_4.1.webp",
+      "images": [
+        "/images/carpets/handknotted/handknotted_4.1.webp",
+        "/images/carpets/handknotted/handknotted_4.2.webp",
+        "/images/carpets/handknotted/handknotted_4.3.webp"
+      ],
+      "description": "Crafted using time-honored hand-knotting techniques, this carpet reflects a meticulous process where thousands of knots are tied to form intricate patterns. The precision in knot density allows for sharp detailing and a rich surface texture, while the finishing process enhances its soft yet resilient feel.",
+      "features": [
+        "Material: Premium wool with cotton base",
+        "Process: Hand-knotted",
+        "Pile Height: Medium-low, refined finish",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g5",
+      "title": "Classic Floral Revival",
+      "collection": "Timeless Heritage",
+      "category": "hand-knotted",
+      "image": "/images/carpets/handknotted/handknotted_5.1.webp",
+      "images": [
+        "/images/carpets/handknotted/handknotted_5.1.webp",
+        "/images/carpets/handknotted/handknotted_5.2.webp",
+        "/images/carpets/handknotted/handknotted_5.3.webp",
+        "/images/carpets/handknotted/handknotted_5.4.webp"
+      ],
+      "description": "Woven through traditional hand-knotting techniques, this carpet showcases intricate floral motifs formed by individually tying thousands of knots. The high knot density enhances clarity in design while contributing to a durable and richly textured surface. It reflects a harmonious blend of detailed craftsmanship and enduring elegance.",
+      "features": [
+        "Material: Wool pile on cotton foundation",
+        "Process: Hand-knotted",
+        "Pile Height: Medium, dense texture",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g6",
+      "title": "Striped Cotton Dhurrie",
+      "collection": "Flatweave Essentials",
+      "category": "Dhurrie",
+      "image": "/images/carpets/Dhurrie/Dhurrie_1.1.webp",
+      "images": [
+        "/images/carpets/Dhurrie/Dhurrie_1.1.webp",
+        "/images/carpets/Dhurrie/Dhurrie_1.2.webp",
+        "/images/carpets/Dhurrie/Dhurrie_1.3.webp"
+      ],
+      "description": "This hand-woven dhurrie is crafted on traditional looms using a precise interlacing of warp and weft threads, creating a flat, pile-free surface. The striped pattern is achieved by alternating dyed yarns during the weaving process. Its reversible structure and breathable texture make it a practical choice for both modern and casual living spaces.",
+      "features": [
+        "Material: 100% Cotton",
+        "Process: Hand-woven flatweave (dhurrie)",
+        "Texture: Flat, lightweight, reversible",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g7",
+      "title": "Geometric Indigo Dhurrie",
+      "collection": "Indigo Weaves",
+      "category": "Dhurrie",
+      "image": "/images/carpets/Dhurrie/Dhurrie_2.1.webp",
+      "images": [
+        "/images/carpets/Dhurrie/Dhurrie_2.1.webp",
+        "/images/carpets/Dhurrie/Dhurrie_2.2.webp",
+        "/images/carpets/Dhurrie/Dhurrie_2.3.webp"
+      ],
+      "description": "Woven on traditional looms using a flatweave technique, this dhurrie features a rhythmic geometric pattern created through precise interlocking of dyed cotton yarns. The absence of pile gives it a smooth, lightweight surface, while the reversible construction enhances versatility and longevity.",
+      "features": [
+        "Material: 100% Dyed Cotton",
+        "Process: Hand-woven flatweave (dhurrie)",
+        "Texture: Flat, smooth, reversible",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g8",
+      "title": "Soft Gradient Tufted",
+      "collection": "Modern Comfort",
+      "category": "hand-tufted",
+      "image": "/images/carpets/handtufted/handtufted_1.1.webp",
+      "images": [
+    "/images/carpets/handtufted/handtufted_1.1.webp",
+    "/images/carpets/handtufted/handtufted_1.2.webp",
+    "/images/carpets/handtufted/handtufted_1.3.webp",
+    "/images/carpets/handtufted/handtufted_1.4.webp"
+  ],
+  "description": "This hand-tufted carpet features a seamless gradient design, achieved by carefully blending dyed yarns during the tufting process. Using a tufting gun, artisans insert loops of yarn into a stretched canvas, which are then sheared to create a soft, even pile. The result is  exceptional comfort, making it ideal for contemporary living spaces.",
+  "features": [
+    "Material: Wool & Viscose Blend",
+    "Process: Hand-tufted with canvas backing",
+    "Pile Height: Medium, plush feel",
+    "Origin: Bhadohi, India"
+  ]
+},
+    {
+      "id": "g9",
       "title": "Muted Kazak Runner",
       "collection": "Nomadic Roots",
       "category": "flatweave",
@@ -90,10 +207,10 @@
       ]
     },
     {
-      "id": "g4",
+      "id": "g10",
       "title": "Modern Minimalist Woven",
       "collection": "Nordic Series",
-      "category": "hand-tufted",
+      "category": "hand-woven",
       "image": "/images/carpets/handwoven/handwoven_1.1.webp",
       "images": [
         "/images/carpets/handwoven/handwoven_1.1.webp",
@@ -109,37 +226,41 @@
       ]
     },
     {
-      "id": "g5",
-      "title": "Bespoke Geometric Silk",
-      "collection": "Architectural Series",
-      "category": "custom-bespoke",
-      "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800",
+      "id": "g11",
+      "title": "Geometric Flatweave Dhurrie",
+      "collection": "Heritage Loom Series",
+      "category": "hand-woven",
+      "image": "/images/carpets/handwoven/handwoven_2.1.webp",
       "images": [
-        "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=1200",
-        "https://images.unsplash.com/photo-1617265113945-814ae3b95a8e?auto=format&fit=crop&q=80&w=1200"
+        "/images/carpets/handwoven/handwoven_2.1.webp",
+        "/images/carpets/handwoven/handwoven_2.2.webp",
+        "/images/carpets/handwoven/handwoven_2.3.webp",
+        "/images/carpets/handwoven/handwoven_2.4.webp"
       ],
-      "description": "An architectural marvel woven in silk and wool. The dynamic geometric patterns catch the light uniquely depending on the viewing angle, offering a bespoke tactile luxury tailored to exact spatial specifications.",
+      "description": "Woven on traditional pit looms, this dhurrie showcases a precise interlacing of warp and weft threads without any pile, resulting in a flat, reversible surface. Its lightweight yet durable structure makes it ideal for contemporary spaces seeking both functionality and understated design.",
       "features": [
-        "Material: 60% Bamboo Silk, 40% Premium Wool",
-        "Customization: Scale and palette bespoke to client",
-        "Texture: Carved high-low pile",
+        "Material: 100% Handspun Cotton",
+        "Process: Hand-woven flatweave (no pile)",
+        "Texture: Lightweight and reversible",
         "Origin: Bhadohi, India"
       ]
     },
     {
-      "id": "g6",
-      "title": "Rustic Kilim Weave",
-      "collection": "Earth Tones",
-      "category": "flatweave",
-      "image": "https://images.unsplash.com/photo-1604085572506-65c2bba00d98?auto=format&fit=crop&q=80&w=800",
+      "id": "g12",
+      "title": "Textured Wool Kilim",
+      "collection": "Artisan Weave Collection",
+      "category": "hand-woven",
+      "image": "/images/carpets/handwoven/handwoven_3.1.webp",
       "images": [
-        "https://images.unsplash.com/photo-1604085572506-65c2bba00d98?auto=format&fit=crop&q=80&w=1200"
+        "/images/carpets/handwoven/handwoven_3.1.webp",
+        "/images/carpets/handwoven/handwoven_3.2.webp",
+        "/images/carpets/handwoven/handwoven_3.3.webp"
       ],
-      "description": "Woven tightly without a pile, this kilim rug brings an earthy, rustic charm. Using undyed natural wool tones combined with subtle vegetable dye highlights, it's an eco-conscious choice for the contemporary home.",
+      "description": "This kilim is crafted through a meticulous hand weaving technique where dyed wool yarns are tightly interlocked across vertical warp threads to form intricate motifs. The process requires continuous attention to tension and alignment, resulting in a piece that balances durability with artistic expression.",
       "features": [
-        "Material: 100% Un-dyed natural wool",
-        "Style: Flatweave",
-        "Maintenance: Easy to clean, lightweight",
+        "Material: Pure Wool",
+        "Process: Hand-woven kilim technique",
+        "Texture: Flat with slight ribbed detailing",
         "Origin: Bhadohi, India"
       ]
     }

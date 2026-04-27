@@ -55,6 +55,8 @@ export default function EnquiryForm() {
               <option value="" disabled>Select Product Interest*</option>
               <option value="Hand Knotted">Hand Knotted</option>
               <option value="Hand Tufted">Hand Tufted</option>
+              <option value="Hand Woven">Hand Woven</option>
+              <option value="Dhurrie">Dhurrie</option>
               <option value="Flatweave">Flatweave / Kilim</option>
               <option value="Bespoke">Custom / Bespoke</option>
             </select>

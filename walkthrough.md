@@ -1,6 +1,6 @@
-# MsAnitaArt Premium Website – Implementation Walkthrough
+# Sunita Rugs Premium Website – Implementation Walkthrough
 
-The development of the MsAnitaArt premium carpet manufacturing website is complete. Below is a walkthrough of what was accomplished, integrating the luxury editorial aesthetic entirely built upon a scalable `React` and `FastAPI` stack.
+The development of the Sunita Rugs premium carpet manufacturing website is complete. Below is a walkthrough of what was accomplished, integrating the luxury editorial aesthetic entirely built upon a scalable `React` and `FastAPI` stack.
 
 ## Architecture Highlights
 
@@ -14,7 +14,7 @@ The development of the MsAnitaArt premium carpet manufacturing website is comple
 4. **Data Management:** All text in the "Our Story" section and the product images load seamlessly from `src/data/story.json` and `src/data/products.json`.
 
 ### Backend: Enquire Processing
-1. **Lightweight FastAPI System:** A fast backend built strictly to handle form storage via SQLite `(msanitaart.db)`.
+1. **Lightweight FastAPI System:** A fast backend built strictly to handle form storage via SQLite `(sunitarugs.db)`.
 2. **Integration:** `EnquiryForm.jsx` submits requests payload correctly to `/api/enquiries`, gracefully resolving with an attractive visual receipt.
 
 ## Detailed Page Layouts
@@ -25,21 +25,21 @@ The development of the MsAnitaArt premium carpet manufacturing website is comple
 - **Contact & Enquire (`/contact`)**: Combines corporate details with a bespoke, fully integrated `FastAPI` submission form.
 
 > [!TIP]
-> **Replacing Images & Data:** Navigate to `c:\Users\GAURAV MAURYA\Desktop\MsAnitaArt\frontend\src\data\products.json` to swap the placeholder Unsplash images. Changes will reflect instantly on the UI without writing any HTML!
+> **Replacing Images & Data:** Navigate to `c:\Users\GAURAV MAURYA\Desktop\SunitaRugs\frontend\src\data\products.json` to swap the placeholder Unsplash images. Changes will reflect instantly on the UI without writing any HTML!
 
 ## How to Run It Locally
 
 Since the codebase is fully ready, you can start the servers directly from your terminal:
 
 **1. Run the Backend API**
-Open a terminal in `Desktop\MsAnitaArt\backend`:
+Open a terminal in `Desktop\SunitaRugs\backend`:
 ```cmd
 venv\Scripts\activate
 uvicorn main:app --reload
 ```
 
 **2. Run the Frontend App**
-Open a second terminal in `Desktop\MsAnitaArt\frontend`:
+Open a second terminal in `Desktop\SunitaRugs\frontend`:
 ```cmd
 npm run dev
 ```

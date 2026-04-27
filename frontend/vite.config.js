@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ["cooling-snowboard-investment-intended.trycloudflare.com"],
+    allowedHosts: ["navy-vision-object-sales.trycloudflare.com"],
   },
 })
