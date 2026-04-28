@@ -16,12 +16,36 @@ export default function EnquiryForm() {
     setStatus('submitting')
     try {
       const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000'
-      const response = await fetch(`${baseUrl}/api/enquiries`, {
+      
+      // 1. Save to Database (Backend)
+      const dbResponse = await fetch(`${baseUrl}/api/enquiries`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       })
-      if (response.ok) {
+
+      // 2. Send Email via EmailJS API (Frontend)
+      const emailResponse = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          service_id: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          template_id: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          user_id: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          template_params: {
+            from_name: formData.fullName,
+            company_name: formData.companyName,
+            reply_to: formData.email,
+            phone: formData.phone,
+            country: formData.country,
+            product_interest: formData.productInterest,
+            quantity: formData.quantity,
+            message: formData.message
+          }
+        })
+      })
+
+      if (dbResponse.ok && emailResponse.ok) {
         setStatus('success')
         setFormData({ fullName: '', companyName: '', email: '', phone: '', country: '', productInterest: '', quantity: '', message: '' })
       } else {
