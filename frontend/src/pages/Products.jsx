@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, Link } from 'react-router-dom'
 import SectionTitle from '../components/SectionTitle'
 import ProductCard from '../components/ProductCard'
 import productsData from '../data/products.json'
@@ -82,9 +82,9 @@ export default function Products() {
         <div className="mt-24 text-center border-t border-luxury-sand pt-16" data-aos="fade-up">
           <h3 className="font-heading text-2xl text-luxury-navy mb-4">Looking for something specific?</h3>
           <p className="text-luxury-taupe mb-8">We offer bespoke manufacturing taking your designs from concept to reality.</p>
-          <a href="/contact" className="px-8 py-3 bg-luxury-navy text-luxury-ivory uppercase tracking-widest text-sm hover:bg-luxury-gold transition-colors inline-block">
+          <Link to="/contact" className="px-8 py-3 bg-luxury-navy text-luxury-ivory uppercase tracking-widest text-sm hover:bg-luxury-gold transition-colors inline-block">
             Discuss Custom Orders
-          </a>
+          </Link>
         </div>
       </div>
     </div>
