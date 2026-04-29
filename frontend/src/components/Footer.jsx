@@ -26,10 +26,10 @@ export default function Footer() {
         <div>
           <h4 className="uppercase tracking-widest text-xs mb-6 text-luxury-gold">Headquarters</h4>
           <address className="not-italic text-sm text-luxury-bone/80 space-y-2">
-            <p>Carpet City, Bhadohi</p>
+            <p>Maryadpatti, Bhadohi</p>
             <p>Uttar Pradesh, India 221401</p>
-            <p className="mt-4 pt-2">Email: export@sunitarugs.com</p>
-            <p>Phone: +91 99999 00000</p>
+            <p className="mt-4 pt-2">Email: anitaartexpo@gmail.com</p>
+            <p>Phone: +91-8707599404, +91-9956572002</p>
           </address>
         </div>
       </div>
