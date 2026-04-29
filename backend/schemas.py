@@ -1,15 +1,15 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Optional
 
 class EnquiryCreate(BaseModel):
-    fullName: str
-    companyName: Optional[str] = None
-    email: str
-    phone: Optional[str] = None
-    country: Optional[str] = None
-    productInterest: str
-    quantity: Optional[str] = None
-    message: str
+    fullName: str = Field(..., max_length=150)
+    companyName: Optional[str] = Field(None, max_length=150)
+    email: str = Field(..., max_length=150)
+    phone: Optional[str] = Field(None, max_length=50)
+    country: Optional[str] = Field(None, max_length=100)
+    productInterest: str = Field(..., max_length=100)
+    quantity: Optional[str] = Field(None, max_length=100)
+    message: str = Field(..., max_length=2000)
 
 class EnquiryResponse(BaseModel):
     id: int
