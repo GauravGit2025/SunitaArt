@@ -18,16 +18,17 @@ if not DATABASE_URL:
     print("WARNING: No DATABASE_URL found. Falling back to local SQLite database.")
     DATABASE_URL = "sqlite:///./sunitarugs.db"
 
+from sqlalchemy.pool import NullPool
+
 # SQLite requires check_same_thread=False, PostgreSQL does not
 connect_args = {}
-if DATABASE_URL.startswith("sqlite"):
+if DATABASE_URL and DATABASE_URL.startswith("sqlite"):
     connect_args = {"check_same_thread": False}
 
 engine = create_engine(
     DATABASE_URL, 
     connect_args=connect_args,
-    pool_pre_ping=True,
-    pool_recycle=300
+    poolclass=NullPool
 )
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
