@@ -80,10 +80,10 @@ export default function Contact() {
                     Email
                   </p>
                   <a
-                    href="mailto:anitaartexpo@gmail.com"
+                    href="mailto:info@sunitarugs.com"
                     className="hover:text-luxury-gold transition-colors duration-300"
                   >
-                    anitaartexpo@gmail.com
+                    info@sunitarugs.com
                   </a>
                 </div>
 

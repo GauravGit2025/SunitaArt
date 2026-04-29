@@ -17,41 +17,35 @@ export default function EnquiryForm() {
     try {
       const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000'
       
-      // Run both requests concurrently so EmailJS doesn't wait for the database
-      const [dbResult, emailResult] = await Promise.allSettled([
-        fetch(`${baseUrl}/api/enquiries`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
-        }),
-        fetch('https://api.emailjs.com/api/v1.0/email/send', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            service_id: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-            template_id: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-            user_id: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-            template_params: {
-              from_name: formData.fullName,
-              company_name: formData.companyName,
-              reply_to: formData.email,
-              phone: formData.phone,
-              country: formData.country,
-              product_interest: formData.productInterest,
-              quantity: formData.quantity,
-              message: formData.message
-            }
-          })
+      // 1. Fire Database Save in the background (DO NOT AWAIT)
+      fetch(`${baseUrl}/api/enquiries`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      }).catch(err => console.error('Background DB save error:', err))
+
+      // 2. Await ONLY EmailJS so the UI is instantly updated
+      const emailResponse = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          service_id: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          template_id: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          user_id: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          template_params: {
+            from_name: formData.fullName,
+            company_name: formData.companyName,
+            reply_to: formData.email,
+            phone: formData.phone,
+            country: formData.country,
+            product_interest: formData.productInterest,
+            quantity: formData.quantity,
+            message: formData.message
+          }
         })
-      ])
+      })
 
-      if (dbResult.status !== 'fulfilled' || !dbResult.value.ok) {
-        console.error('Database save delayed or failed, but email sending proceeded.')
-      }
-
-      const emailSuccess = emailResult.status === 'fulfilled' && emailResult.value.ok
-
-      if (emailSuccess) {
+      if (emailResponse.ok) {
         setStatus('success')
         setFormData({ fullName: '', companyName: '', email: '', phone: '', country: '', productInterest: '', quantity: '', message: '' })
       } else {
