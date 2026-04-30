@@ -174,35 +174,36 @@
       "category": "hand-tufted",
       "image": "/images/carpets/handtufted/handtufted_1.1.webp",
       "images": [
-    "/images/carpets/handtufted/handtufted_1.1.webp",
-    "/images/carpets/handtufted/handtufted_1.2.webp",
-    "/images/carpets/handtufted/handtufted_1.3.webp",
-    "/images/carpets/handtufted/handtufted_1.4.webp"
-  ],
-  "description": "This hand-tufted carpet features a seamless gradient design, achieved by carefully blending dyed yarns during the tufting process. Using a tufting gun, artisans insert loops of yarn into a stretched canvas, which are then sheared to create a soft, even pile. The result is  exceptional comfort, making it ideal for contemporary living spaces.",
-  "features": [
-    "Material: Wool & Viscose Blend",
-    "Process: Hand-tufted with canvas backing",
-    "Pile Height: Medium, plush feel",
-    "Origin: Bhadohi, India"
-  ]
-},
+        "/images/carpets/handtufted/handtufted_1.1.webp",
+        "/images/carpets/handtufted/handtufted_1.2.webp",
+        "/images/carpets/handtufted/handtufted_1.3.webp",
+        "/images/carpets/handtufted/handtufted_1.4.webp"
+      ],
+      "description": "This hand-tufted carpet features a seamless gradient design, achieved by carefully blending dyed yarns during the tufting process. Using a tufting gun, artisans insert loops of yarn into a stretched canvas, which are then sheared to create a soft, even pile. The result is  exceptional comfort, making it ideal for contemporary living spaces.",
+      "features": [
+        "Material: Wool & Viscose Blend",
+        "Process: Hand-tufted with canvas backing",
+        "Pile Height: Medium, plush feel",
+        "Origin: Bhadohi, India"
+      ]
+    },
     {
       "id": "g9",
-      "title": "Muted Kazak Runner",
+      "title": "Imperial Oushak",
       "collection": "Nomadic Roots",
-      "category": "flatweave",
-      "image": "/images/carpets/handknotted/Indo-kazak_1.1.webp",
+      "category": "hand-knotted",
+      "image": "/images/carpets/handknotted/Oushak_1.webp",
       "images": [
-        "/images/carpets/handknotted/Indo-kazak_1.1.webp",
-        "/images/carpets/handknotted/Indo-kazak_1.2.webp",
-        "/images/carpets/handknotted/Indo-kazak_1.3.webp"
+        "/images/carpets/handknotted/Oushak_1.webp",
+        "/images/carpets/handknotted/Oushak_2.webp",
+        "/images/carpets/handknotted/Oushak_3.webp",
+        "/images/carpets/handknotted/Oushak_4.webp"
       ],
-      "description": "A flatweave runner reflecting the rich heritage of nomadic tribal designs. Characterized by its striking geometric patterns and subdued color palette, it offers excellent durability suitable for high-traffic areas like hallways.",
+      "description": "An exquisite handknotted carpet inspired by the timeless Oushak design philosophy. Crafted with a high knot density, this piece offers exceptional detail, durability, and a refined texture underfoot. Its elegant floral patterns and subtle abrashed tones create a harmonious blend of tradition and sophistication, making it ideal for both classic and contemporary interiors",
       "features": [
         "Material: 100% Wool",
-        "Style: Reversible Kilim flatweave",
-        "Design: Geometric tribal patterns",
+        "Style: Dense, plush pile with a smooth finish",
+        "Design: Traditional Oushak floral motifs",
         "Origin: Bhadohi, India"
       ]
     },
