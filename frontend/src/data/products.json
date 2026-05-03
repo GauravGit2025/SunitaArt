@@ -264,6 +264,195 @@
         "Texture: Flat with slight ribbed detailing",
         "Origin: Bhadohi, India"
       ]
+    },
+    {
+      "id": "g13",
+      "title": "Earthy Textured Weave",
+      "collection": "Rustic Essence",
+      "category": "hand-woven",
+      "image": "/images/carpets/handwoven/handwoven_4.1.webp",
+      "images": [
+        "/images/carpets/handwoven/handwoven_4.1.webp",
+        "/images/carpets/handwoven/handwoven_4.2.webp",
+        "/images/carpets/handwoven/handwoven_4.3.webp"
+      ],
+      "description": "A refined blend of jute and wool, offering natural texture and warm earthy tones for grounded, modern spaces.",
+      "features": [
+        "Material: Jute & Wool Blend",
+        "Process: Hand Woven Flat Weave",
+        "Pile Height: Flat (No Pile)",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g14",
+      "title": "Subtle Horizon Stripes",
+      "collection": "Coastal Calm",
+      "category": "hand-woven",
+      "image": "/images/carpets/handwoven/handwoven_5.1.webp",
+      "images": [
+        "/images/carpets/handwoven/handwoven_5.1.webp",
+        "/images/carpets/handwoven/handwoven_5.2.webp",
+        "/images/carpets/handwoven/handwoven_5.3.webp"
+      ],
+      "description": "Soft linear patterns inspired by coastal horizons, crafted in a balanced jute and wool weave for calm, airy interiors.",
+      "features": [
+        "Material: Jute & Wool Blend",
+        "Process: Hand Woven Flat Weave",
+        "Pile Height: Flat (No Pile)",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g15",
+      "title": "Triangular weaves",
+      "collection": "Triangular weaves",
+      "category": "Dhurrie",
+      "image": "/images/carpets/Dhurrie/Dhurrie_3.1.webp",
+      "images": [
+        "/images/carpets/Dhurrie/Dhurrie_3.1.webp",
+        "/images/carpets/Dhurrie/Dhurrie_3.2.webp",
+        "/images/carpets/Dhurrie/Dhurrie_3.3.webp"
+      ],
+      "description": "A clean geometric dhurrie in indigo tones, offering a lightweight, reversible design for modern spaces.",
+      "features": [
+        "Material: 100% New Zealand Wool",
+        "Process: Hand-woven flatweave (dhurrie)",
+        "Texture: Flat, smooth, reversible",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g16",
+      "title": "Floral patterns",
+      "collection": "Floral patterns",
+      "category": "Dhurrie",
+      "image": "/images/carpets/Dhurrie/Dhurrie_4.1.webp",
+      "images": [
+        "/images/carpets/Dhurrie/Dhurrie_4.1.webp",
+        "/images/carpets/Dhurrie/Dhurrie_4.2.webp",
+        "/images/carpets/Dhurrie/Dhurrie_4.3.webp"
+      ],
+      "description": "A refined grid pattern in deep indigo, crafted for durability with a soft, reversible flat weave.",
+      "features": [
+        "Material: 100% New Zealand Wool",
+        "Process: Hand-woven flatweave (dhurrie)",
+        "Texture: Flat, smooth, reversible",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g17",
+      "title": "Indigo Stripe Balance",
+      "collection": "Indigo Weaves",
+      "category": "Dhurrie",
+      "image": "/images/carpets/Dhurrie/Dhurrie_5.1.webp",
+      "images": [
+        "/images/carpets/Dhurrie/Dhurrie_5.1.webp",
+        "/images/carpets/Dhurrie/Dhurrie_5.2.webp",
+        "/images/carpets/Dhurrie/Dhurrie_5.3.webp"
+      ],
+      "description": "Balanced stripe patterns in rich indigo, delivering a versatile and lightweight dhurrie for everyday elegance.",
+      "features": [
+        "Material: 100% New Zealand Wool",
+        "Process: Hand-woven flatweave (dhurrie)",
+        "Texture: Flat, smooth, reversible",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g18",
+      "title": "Natural Weave Dhurrie",
+      "collection": "Earthy Looms",
+      "category": "Dhurrie",
+      "image": "/images/carpets/Dhurrie/Dhurrie_6.1.webp",
+      "images": [
+        "/images/carpets/Dhurrie/Dhurrie_6.1.webp",
+        "/images/carpets/Dhurrie/Dhurrie_6.2.webp",
+        "/images/carpets/Dhurrie/Dhurrie_6.3.webp"
+      ],
+      "description": "A natural jute and wool dhurrie with a clean, textured weave, designed for durability and everyday versatility.",
+      "features": [
+        "Material: Jute & Wool Blend",
+        "Process: Hand-woven flatweave (dhurrie)",
+        "Texture: Flat, textured, reversible",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g19",
+      "title": "Soft Gradient Tufted",
+      "collection": "Modern Comfort",
+      "category": "hand-tufted",
+      "image": "/images/carpets/handtufted/handtufted_2.1.webp",
+      "images": [
+        "/images/carpets/handtufted/handtufted_2.1.webp",
+        "/images/carpets/handtufted/handtufted_2.2.webp",
+        "/images/carpets/handtufted/handtufted_2.3.webp"
+      ],
+      "description": "A seamless gradient design with a soft, plush pile, crafted for modern comfort and visual depth.",
+      "features": [
+        "Material: Wool & Viscose Blend",
+        "Process: Hand-tufted with canvas backing",
+        "Pile Height: Medium, plush feel",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g20",
+      "title": "Abstract Flow Tufted",
+      "collection": "Urban Textures",
+      "category": "hand-tufted",
+      "image": "/images/carpets/handtufted/handtufted_3.1.webp",
+      "images": [
+        "/images/carpets/handtufted/handtufted_3.1.webp",
+        "/images/carpets/handtufted/handtufted_3.2.webp",
+        "/images/carpets/handtufted/handtufted_3.3.webp"
+      ],
+      "description": "Fluid abstract patterns with a rich, velvety pile, bringing movement and depth to contemporary interiors.",
+      "features": [
+        "Material: Wool & Viscose Blend",
+        "Process: Hand-tufted with canvas backing",
+        "Pile Height: Medium, plush feel",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g21",
+      "title": "Muted Stone Texture",
+      "collection": "Natural Forms",
+      "category": "hand-tufted",
+      "image": "/images/carpets/handtufted/handtufted_4.1.webp",
+      "images": [
+        "/images/carpets/handtufted/handtufted_4.1.webp",
+        "/images/carpets/handtufted/handtufted_4.2.webp",
+        "/images/carpets/handtufted/handtufted_4.3.webp"                  
+      ],
+      "description": "Inspired by natural stone textures, this piece offers subtle depth with a soft, comfortable finish.",
+      "features": [
+        "Material: Wool & Viscose Blend",
+        "Process: Hand-tufted with canvas backing",
+        "Pile Height: Medium, plush feel",
+        "Origin: Bhadohi, India"
+      ]
+    },
+    {
+      "id": "g22",
+      "title": "Modern Linear Tufted",
+      "collection": "Contemporary Lines",
+      "category": "hand-tufted",
+      "image": "/images/carpets/handtufted/handtufted_5.1.webp",
+      "images": [
+        "/images/carpets/handtufted/handtufted_5.1.webp",
+        "/images/carpets/handtufted/handtufted_5.2.webp"
+      ],
+      "description": "Clean linear patterns with a plush surface, designed to add structure and softness to modern spaces.",
+      "features": [
+        "Material: Wool & Viscose Blend",
+        "Process: Hand-tufted with canvas backing",
+        "Pile Height: Medium, plush feel",
+        "Origin: Bhadohi, India"
+      ]
     }
   ]
 }
